@@ -1,0 +1,19 @@
+﻿{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/{catchAll}",
+      "DownstreamPathTemplate": "/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000",
+    "RequestIdKey": "OcRequestId"
+  }
+} 

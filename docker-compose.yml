@@ -1,0 +1,16 @@
+﻿services:
+  gateway:
+    image: snowflower1408/utconnect_gateway
+    container_name: gateway
+    ports:
+      - "5000:8080"
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
+    networks:
+      - backend
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+networks:
+  backend:
